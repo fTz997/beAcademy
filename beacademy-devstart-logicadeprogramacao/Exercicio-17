@@ -1,0 +1,21 @@
+var login : caractere
+var nome : Jorge
+var password : inteiro
+var senha : 1337
+var op : inteiro
+Inicio
+    escreval("Digite o login:")
+    leia(login)
+    escreval("Digite a senha:")
+    leia(password)
+    
+    repita
+        escreval("Digite -1 para sair do programa")
+        se(login == nome && password == senha) entao
+            escreva("Bem-vindo!")
+        senao
+            escreva("Usuário ou senha inseridos é inválido, tente novamente")
+        fimse
+    ate (op != -1)
+
+Fim

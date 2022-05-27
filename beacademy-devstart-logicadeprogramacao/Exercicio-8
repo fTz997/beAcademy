@@ -1,0 +1,45 @@
+var lado : real
+var lado1 : real
+var lado2 : real
+var lado3 : real
+var triangulo : real
+var base : real
+var operacao : caractere
+var area : real
+var perimetro : real
+
+Inicio
+    escreva("Digite (Q) para calcular a área e o perímetro do quadrado ou (T) para calcular a área e o perímetro do triângulo")
+    leia(operacao)
+    
+    escolha operacao
+        caso "Q"
+            escreva("Digite o lado do quadrado")
+            leia(lado)
+            area := lado * lado
+            perimetro := lado * 4
+            
+            escreva("Área: " + area + " m.")
+            escreva("Perímetro: " + perimetro + " m.")
+        caso "T"
+            escreva("Digite o valor da base do triângulo")
+            leia(base)
+            escreva("Digite valor da altura do triângulo")
+            leia(triangulo)
+            escreva("Digite o valor do primeiro lado do triângulo")
+            leia(lado1)
+            escreva("Digite o valor do segundo lado do triângulo")
+            leia(lado2)
+            escreva("Digite o valor do terceiro lado do triângulo")
+            leia(lado3)
+            
+            area := (base * altura) / 2
+            perimetro := lado1 + lado2 + lado3
+            
+            escreva("Área: " + area + " m.")
+            escreva("Perímetro: " + perimetro + " m.")
+        outrocaso
+            escreva("Opção inválida, digite (Q)uadrado ou (T)riângulo")
+    fimescolha
+
+Fim

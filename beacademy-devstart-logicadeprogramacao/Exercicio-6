@@ -1,0 +1,29 @@
+var valorInicial : real
+var operacao : inteiro
+var deposito : real
+var saque : real
+var saldoAtual : real
+Inicio
+    escreva("Informe seu saldo incial:")
+    leia(saldoInicial)
+    
+    escreva("Informe a opção que deseja realizar: ")
+    escreva("1 - Depósito")
+    escreva("2 - Saque")
+    leia(operacao)
+    
+    se(operacao==1) entao
+        escreval("Qual o valor para depósito:")
+        leia(deposito)
+        saldoAtual <- (saldoInicial + deposito)
+    senao
+    se(operacao==2) entao
+        escreval("Qual o valor para saque:")
+        leia(saque)
+        saldoAtual <- (saldoInicial - saque)
+
+    escreval("Saldo incial R$ " + saldoIncial)
+    escreval("Depósito R$ " + depósito)
+    escreval("Saque R$ " + saque)
+    escreval("Saldo atual R$ " + saldoAtual)
+Fim

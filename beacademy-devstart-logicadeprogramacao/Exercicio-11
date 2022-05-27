@@ -1,0 +1,8 @@
+var i : inteiro
+Inicio
+    para i de 0 ate 100 passo i+1 faca
+        se(i%2==0)entao
+            escreva(i)
+        fimse
+    fimpara
+Fim

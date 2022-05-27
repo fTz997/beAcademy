@@ -1,0 +1,17 @@
+var nome : caractere
+var peso : real
+var altura : real
+var imc : real
+Inicio
+    escreva("Digite seu nome:")
+    leia(nome)
+    escreva("Digite seu peso:")
+    leia(peso)
+    escreva("Digite sua altura:")
+    leia(altura)
+    imc <- (peso/(altura * altura))
+    escreva("Nome:  " + nome)
+    escreva("Altura: " + altura + "mts")
+    escreva("Peso: " + peso + "kg")
+    escreva("IMC: " + imc)
+Fim

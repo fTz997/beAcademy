@@ -1,0 +1,20 @@
+var menor18 : inteiro
+var maior60 : inteiro
+var idade : inteiro
+var count : inteiro
+Inicio
+    
+    repita
+        escreval("Digite a idade da pessoa:")
+        leia(idade)
+        
+        se(idade < 18) entao
+        count += menor18
+        senao
+        se(idade > 60) entao
+        count += maior60
+    ate (idade != -99)
+    fimenquanto
+    escreva("Total de pessoas menor de 18 anos: " + menor18)
+    escreva("Total de pessoas maior de 60 anos: " + maior60)
+Fim

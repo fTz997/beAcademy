@@ -1,0 +1,14 @@
+var nome : caractere
+var peso : real
+var altura : real
+Inicio
+    escreva("Digite seu nome:")
+    leia(nome)
+    escreva("Digite seu peso:")
+    leia(peso)
+    escreva("Digite sua altura:")
+    leia(altura)
+    escreva("Seja bem vindo " + nome)
+    escreva("Atualmente seu peso é" + peso + "kg")
+    escreva("E você mede" + altura)
+Fim

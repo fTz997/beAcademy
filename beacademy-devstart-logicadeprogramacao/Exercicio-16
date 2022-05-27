@@ -1,0 +1,32 @@
+var n1 : inteiro
+var n2 : inteiro
+var opera : inteiro
+var resultado : inteiro
+Inicio
+    escreval("Digite o primeiro número:")
+    leia(n1)
+    escreval("Digite o segundo número:")
+    leia(n2)
+    
+    enquanto (opera != 5) faca
+        escreval("Qual opção você deseja: 1)somar 2)subtrair 3)dividir 4)multiplicar 5)sair")
+        leia(opera)
+        
+        escolha opera
+            caso 1
+            resultado := n1 + n2
+
+            caso 2
+            resultado := n1 - n2
+
+            caso 3
+            resultado := n1 / n2
+
+            caso 4
+            resultado := n1 * n2
+            
+            outrocaso
+            escreva("Opção inválida!")
+    fimenquanto
+    escreval(resultado)
+Fim

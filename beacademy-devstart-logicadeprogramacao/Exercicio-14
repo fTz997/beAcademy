@@ -1,0 +1,12 @@
+var n : inteiro
+var numero : inteiro
+Inicio
+    escreva("Digite o número para tabuada:")
+    leia(numero)
+    n <- 1
+    enquanto n < 11 faca
+        escreva(numero," x ", n, " = ", (numero * n))
+        n<-n+1
+    fimenquanto
+    escreva("Continuando após o enquanto")
+Fim

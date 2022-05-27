@@ -1,0 +1,6 @@
+var end : caractere
+Inicio
+    escreva("Digite seu endereco:")
+    leia(end)
+    escreva("Seu endereco é rua " + end)
+Fim

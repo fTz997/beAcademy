@@ -1,0 +1,30 @@
+var num1 : real
+var num2 : real
+var operacao : caractere
+var resultado : real
+
+Inicio
+    escreva("Digite o primeiro número")
+    leia(num1)
+    escreva("Digite a operacao")
+    leia(operacao)
+    escreva("Digite o segundo número")
+    leia(num2)
+    escolha operacao
+        caso "+"
+            resultado := num1 + num2
+        caso "-"
+            resultado := num1 - num2
+        caso "/"
+            resultado := num1 / num2
+        caso "*"
+            resultado := num1 * num2
+        outrocaso
+            resultado := -1
+    fimescolha
+    se(resultado=-1)entao
+        escreva("Operação inválida! Escolha + - / *")
+    senao
+        escreval("Resultado: ", resultado)
+    fimse
+Fim

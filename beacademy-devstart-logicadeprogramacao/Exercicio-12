@@ -1,0 +1,14 @@
+var i : inteiro
+var num1 : inteiro
+var num2 : inteiro
+Inicio
+    escreval("Informe o primeiro número")
+    leia(num1)
+    escreval("Informe o segundo número")
+    leia(num2)
+    para i de num1 ate num2 passo i+1 faca
+        se(i%3==0)entao
+            escreva(i)
+        fimse
+    fimpara
+Fim

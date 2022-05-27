@@ -1,0 +1,65 @@
+var saldoInicial : real
+var deposito : real
+var saque : real
+var transf : real
+var opera : caractere
+var totalOp : inteiro
+var saldoAtual : real
+var ag : inteiro
+var conta : inteiro
+var banco : caractere
+
+Inicio
+    escreva("Digite o seu saldo inicial")
+    leia(saldoInicial)
+    escreva("Quantas operações deseja realizar")
+    leia(totalOp)
+    
+    para i de 1 ate totalOp passo i+1 faca
+        escreva("Digite (S) saque, (D) depósito, (T) transferência")
+        leia(opera)
+        
+        escolha opera
+            caso "S"
+                escreva("Digite o valor de saque")
+                leia(saque)
+                saldoAtual := saldoInicial - saque
+    
+            caso "D"
+                escreva("Digite o valor do depósito")
+                leia(deposito)
+                saldoAtual := saldoInicial + deposito
+    
+            caso "T"
+                escreva("Digite o valor da transferência")
+                leia(transf)
+                escreva("Digite o banco para transferir")
+                leia(banco)
+                escreva("Informe a agência")
+                leia(ag)
+                escreva("Informe a conta")
+                leia(conta)
+                saldoAtual := saldoInicial - transf
+                
+            outrocaso
+                escreva("Opção inválida, digite (Q)uadrado ou (T)riângulo")
+        fimescolha
+    fimpara
+        
+        se(opera=="S")entao
+            escreva("Operação realizada foi saque, valor R$: " + saque)
+        senao
+        se(opera=="D")entao
+            escreva("Operação realizada foi depósito, valor R$: " + deposito)
+        senao
+        se(opera=="T")entao
+            escreva("Transferência realizada para o Banco " + banco)
+            escreva("Agência: " + ag)
+            escreva("Conta: " + conta)
+            escreva("no valor de R$: " + transf)
+        fimse
+        
+    escreva("Seu saldo inicial era R$ " + saldoInicial)
+    escreva("Seu saldo atual é R$ " + saldoAtual)
+
+Fim

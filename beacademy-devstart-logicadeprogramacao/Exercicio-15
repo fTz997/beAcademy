@@ -1,0 +1,12 @@
+var login : caractere
+var senha : inteiro
+Inicio
+    escreval("Login:")
+    leia(login)
+    escreval("Senha:")
+    leia(senha)
+    enquanto (!login==jorge && senha==egroj) faca
+        escreva("Tente novamente")
+    fimenquanto
+    escreval("Boas vindas!")
+Fim

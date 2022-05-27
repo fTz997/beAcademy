@@ -1,0 +1,12 @@
+var i : inteiro
+var soma : inteiro
+Inicio
+    num <- 1
+    soma <- 0
+    repita
+        escreva(i, " + ")
+        soma <- soma + i
+    ate (i < 101)
+    fimenquanto
+    escreva("A soma dos inteiros de 1 a 100 é ", soma)
+Fim
