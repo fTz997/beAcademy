@@ -4,9 +4,7 @@ $notas = [10, 9, 9.5, 7];
 $notas2 = [8, 7, 9.5, 4];
 
 function mediaNotas(array $notas): float
-{
-
-  /*
+{ /*
   $total = 0;
   $quantidade = 0;
   foreach($notas as $nota){
