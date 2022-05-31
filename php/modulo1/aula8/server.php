@@ -1,0 +1,5 @@
+<?php
+
+vardump($_SERVER);
+
+?>
