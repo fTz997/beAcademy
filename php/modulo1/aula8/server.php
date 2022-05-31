@@ -1,5 +1,5 @@
 <?php
 
-vardump($_SERVER);
+echo $_SERVER['REQUEST_URI'];
 
 ?>
