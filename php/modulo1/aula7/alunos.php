@@ -41,28 +41,24 @@ $alunos = [$a1, $a2, $a3, $a4];
             </tr>
         </thead>
         <tbody>
-                <?php
+            <?php
+                foreach($alunos as $aluno){
+                $index = 0;
+                $total = 0;
+                while($index < count($aluno['notas'])){
+                    $total += $aluno['notas'][$index];
+                    $index++;
+                    }
 
-                    foreach($alunos as $aluno){
+                    $media = $total / 4;
+                    $mediaFormatada = number_format($media, 1, '.', '');
 
-                            $index = 0;
-                            $total = 0;
-                            while($index < count($aluno['notas'])){
-
-                                $total += $aluno['notas'][$index];
-                                $index++;
-                            }
-
-                            $media = $total / 4;
-
-                            $mediaFormatada = number_format($media, 1, '.', '');
-
-                        echo "<tr>
-                                <td>{$aluno['nome']}</td>
-                                <td>{$aluno['email']}</td>
-                                <td>{$aluno['telefone']}</td>
-                                <td>{$mediaFormatada}</td>
-                            </tr>";
+                    echo "<tr>
+                        <td>{$aluno['nome']}</td>
+                        <td>{$aluno['email']}</td>
+                        <td>{$aluno['telefone']}</td>
+                        <td>{$mediaFormatada}</td>
+                    </tr>";
 
 
                     }
