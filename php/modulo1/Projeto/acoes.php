@@ -10,7 +10,7 @@ function home() {
   include 'telas/home.php';
 }
 function listar() {
-  $contatos = ['a', 'b', 'c'];
+  $contatos = file('dados/contatos.csv');
   include 'telas/listar.php';
 }
 function not_found() {

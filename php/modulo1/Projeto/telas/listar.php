@@ -1,6 +1,5 @@
 <h1>Listar contatos</h1>
 
-<?php var_dump($contatos); ?>
 
 <table class='table table-hover table-stripped'>
   <thead class='table-dark'>
