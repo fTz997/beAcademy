@@ -12,8 +12,11 @@
   <tbody>
     <?php
       foreach ($contatos as $cadaContato){
+        $partes = explode(";", $cadaContato);
         echo '<tr>';
-          echo '<td>' . $cadaContato . '</td>';
+          echo '<td>' . $partes[0] . '</td>';
+          echo '<td>' . $partes[1] . '</td>';
+          echo '<td>' . $partes[2] . '</td>';
         echo '</tr>';
       }
     ?>
