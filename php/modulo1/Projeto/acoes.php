@@ -14,6 +14,9 @@ function cadastro() {
     fwrite($arquivo, "{$nome};{$email};{$telefone}".PHP_EOL);
         
     fclose($arquivo);
+    $mensagem = "Cadastro finalizado";
+
+    include "telas/mensagem.php";
   }
   include 'telas/cadastro.php';
 }
@@ -30,4 +33,11 @@ function not_found() {
 
 function footer() {
   include 'telas/footer.php';
+}
+
+function excluir(){
+  $id = $_GET['id'];
+  $contatos = file('dados/contatos.csv');
+
+  unset($contatos[$id]);
 }
