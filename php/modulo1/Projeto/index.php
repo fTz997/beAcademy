@@ -12,13 +12,9 @@ match ($url[0]){
   '/cadastro' => cadastro(),
   '/listar' => listar(),
   '/excluir' => excluir(),
-  //'/admin' => admin(),
+  '/editar' => editar(),
   default => not_found(),
 };
 
 include 'telas/footer.php'
-
-
-
-
 ?>
