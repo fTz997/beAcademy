@@ -23,6 +23,10 @@ class Produto
   }
   public function setValor(float $valor):void 
   {
+    if ($valor < 0){
+      die ("O valor deve ser positivo");
+    }
+    
     $this->valor = $valor;
   }
 }
