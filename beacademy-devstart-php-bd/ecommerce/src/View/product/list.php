@@ -2,6 +2,7 @@
 
 <div class='mb-3 text-end'>
   <a href="/produtos/novo" class="btn btn-outline-primary">Novo produto</a>
+  <a href="/produtos/relatorio" class="btn btn-dark">Estoque</a>
 </div>
 
 <table class="table table-hover table-striped">
