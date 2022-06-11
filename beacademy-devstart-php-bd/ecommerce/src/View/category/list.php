@@ -1,5 +1,9 @@
 <h1>Listar categorias</h1>
 
+<div class='mb-3 text-end'>
+  <a href="/categorias/nova" class="btn btn-outline-primary">Nova categoria</a>
+</div>
+
 <table class="table table-hover table-striped">
   <thead class="tb-dark">
     <tr>
